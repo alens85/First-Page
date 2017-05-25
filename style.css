@@ -1,0 +1,125 @@
+/* #demo{ */
+	 /* font-family: "Times New Roman", Georgia, Serif; color:black; font-size:25px; */
+/* } */
+
+header{
+	background:url(images/header-bg.jpg) center center no-repeat; color:#fff; text-align:center; background-size:cover; padding:135px 20px 90px 20px;
+}
+
+header h1{
+	font-size:3.75em; font-family: 'Raleway', sans-serif; margin-bottom:25px;
+}
+
+header h3{
+	font-size:1.125em; margin-bottom:50px; font-style:italic;
+}
+
+header p{
+	font-size:0.75em; 
+}
+
+.subscribe{
+	background:rgba(0,0,0,0.65); display:table; padding:20px; margin:0 auto 10px auto; border-radius:20px;
+}
+
+.subscribe input{
+	float:left;	
+}
+
+.subscribe input[type="text"], .subscribe input[type="email"]{
+	padding: 0; border:none; width:320px; margin-right:10px; font-family: 'Open Sans', sans-serif; font-size:1em; padding:12px 20px 13px 20px; box-sizing:border-box;				
+}
+
+.subscribe input[type="submit"]{
+	background:#ae2c52; border:none; color:#fff; font-size:1.25em; font-family: 'Open Sans', sans-serif; font-weight:700; padding:10px 35px; cursor:pointer;
+}
+
+article{
+	max-width:900px; margin:0 auto; padding:50px 20px;
+}
+
+article h1{
+	font-size:3em; text-align:center; margin-bottom:25px;
+}
+
+article p{
+	margin-bottom:6px;
+}
+
+.imgleft{
+	float:left; margin:-10px 30px 0px 0px;
+}
+
+@media screen and (max-width:930px){
+	.subscribe input[type="text"], .subscribe input[type="email"]{
+		width:260px;
+	}
+}
+
+@media screen and (max-width:810px){
+	.subscribe input[type="text"], .subscribe input[type="email"]{
+		width:320px; display:block; float:none; margin-right:0; margin-bottom:10px;
+	}
+	
+	.subscribe input[type="submit"]{
+	padding:10px 65px; cursor:pointer; margin-bottom:-10px;
+    }
+	
+	header{
+		padding:30px 20px;
+	}
+	
+	header h1{
+	font-size:2.75em; margin-bottom:20px;
+    }
+
+     header h3{
+	margin-bottom:20px; 
+    }
+	
+	input.submit{                                           /* Отцентрировал кнопку отправки по центру.Вместо submit,как идиот написал sumbit и долго не понимал какого хера не работает хДДДД */
+		float:none;
+		display:block;
+		margin:0 auto;
+	
+	}
+}
+
+@media screen and (max-width:400px){
+	.subscribe input[type="text"], .subscribe input[type="email"]{
+		width:230px;
+	}
+	
+	.subscribe input[type="submit"]{
+	padding:10px 27px; cursor:pointer; margin-bottom:-7.5px;
+    }
+	
+	header{
+		padding:15px 15px;
+	}
+	
+    article h1{
+	font-size:2em; text-align:center; margin-bottom:15px; margin-top:-45px;
+    }
+	
+	
+    .imgleft{
+	margin:0 auto; float:none; display:block; padding-bottom:15px;
+    }
+	
+	article p{
+	margin-bottom:15px; 
+    }
+	
+	.subscribe2{                                         /* Добавил чтобы убрать отступ между формой подписки(<div class="subscribe">) и <article> */
+		margin-top:-50px;
+	}
+	
+	input.submit{                                       /* Отцентрировал кнопку отправки по центру */
+    float:none;
+    display:block;
+    margin:0 auto;
+	}
+	
+
+}
